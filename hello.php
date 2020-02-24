@@ -41,4 +41,23 @@
 	};
 
 	print_message();
+
+	echo "<hr>";
+
+	// variable of variables
+
+	$student = "Alex Csanyi";
+	$male = "student";
+	$gender = "male";
+
+	echo $gender . "<br>";
+	echo $$gender . "<br>";
+	echo $$$gender . "<br>";
+
+	echo "<hr>";
+
+	// ternary operator & isset()
+
+	$name;
+	echo isset($name) ? "Variable is set" : "Variable is not set";
 ?>
