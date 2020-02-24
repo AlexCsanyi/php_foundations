@@ -59,5 +59,20 @@
 	// ternary operator & isset()
 
 	$name;
-	echo isset($name) ? "Variable is set" : "Variable is not set";
+	echo isset($name) ? "Variable is set" . "<br>" : "Variable is not set" . "<br>";
+
+	$first_name = "Alex";
+	echo isset($first_name) ? "Variable is set" . "<br>" : "Variable is not set" . "<br>";
+
+	echo "<hr>";
+
+	// define a constant
+
+	define("LANGUAGE", "PHP");
+	$lang = LANGUAGE;
+	echo "This program is written in $lang <br>";
+	echo "This program is written in LANGUAGE <br>"; // this will not recognize the constant
+	echo "This program is written in " . LANGUAGE . "<br>";
+
+	
 ?>
