@@ -49,5 +49,26 @@
             . $_GET["location"];
     
     ?>
+
+    <br>
+    <h3>Let's build a mad_lib game</h3>
+    
+    <form action="project.php" method="GET">
+        color: <input style='margin-bottom: 20px; margin-top: 20px' type="text" name="color"> <br>
+        plural noun: <input style='margin-bottom: 20px' type="text" name="pluralNoun"> <br>
+        celebrity: <input style='margin-bottom: 20px' type="text" name="celebrity"> <br>
+        <input style='margin-bottom: 20px' type="submit">
+    </form>
+
+    <?php
+
+        $color = $_GET["color"];
+        $pluralNoun = $_GET["pluralNoun"];
+        $celebrity = $_GET["celebrity"];
+
+        echo "Roses are $color <br>";
+        echo "$pluralNoun are blue <br>";
+        echo "I love $celebrity <br>";
+    ?>
 </body>
 </html>
