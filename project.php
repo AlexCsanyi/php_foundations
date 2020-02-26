@@ -70,5 +70,40 @@
         echo "$pluralNoun are blue <br>";
         echo "I love $celebrity <br>";
     ?>
+
+    <br>
+    <hr>
+    <form action="project.php" method="POST">
+        password: <input style='margin-bottom: 20px; margin-top: 20px' type="password" name="password"> <br>
+        <input style='margin-bottom: 20px' type="submit">
+    </form>
+    <br><br>
+    <?php 
+        echo $_POST["password"]
+    ?>
+    <br>
+    <hr>
+
+    <?php
+        $friends = array("Kevin", "Oscar", "Jim", "Karen");
+        $friends[1] = "Peter";
+        $friends[4] = "Angela";
+        echo $friends[1] . "<br>";
+        echo "Length of array: " . count($friends);
+    ?>
+
+    <br>
+    <hr>
+    <form action="project.php" method="POST">
+        Apples: <input style='margin-bottom: 20px' type="checkbox" name="fruits[]" value="apples"><br>
+        Oranges: <input style='margin-bottom: 20px' type="checkbox" name="fruits[]" value="oranges"><br>
+        Pears: <input style='margin-bottom: 20px' type="checkbox" name="fruits[]" value="pears"><br>
+        <input style='margin-bottom: 20px' type="submit">
+    </form>
+    <br><br>
+    <?php 
+        $fruits = $_POST["fruits"];
+        echo $fruits[0];
+    ?>
 </body>
 </html>
