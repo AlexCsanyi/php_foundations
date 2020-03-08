@@ -1,0 +1,191 @@
+{
+  "id": "16732e3f-b9c1-4906-800f-c6618d74e180",
+  "version": "2.0",
+  "name": "Amazon",
+  "url": "https://www.amazon.co.uk/",
+  "tests": [{
+    "id": "df946720-7c7d-4a69-b247-7d7c2672a6f3",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "33de7947-03fd-40e0-af90-baa853a0b142",
+    "name": "search_iphone",
+    "commands": [{
+      "id": "e8ff38fd-7504-4d8a-9366-5ae475690cbe",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.co.uk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43b65791-711a-4b3d-aa52-2a567d12a9b4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1331x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96bceff3-dca2-4430-bf83-6d6ab9e09398",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-search']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b497adde-aa41-44e9-a66a-e26835bf0881",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.nav-search-submit > .nav-input",
+      "targets": [
+        ["css=.nav-search-submit > .nav-input", "css:finder"],
+        ["xpath=//input[@value='Go']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-search']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25fc90e9-448f-452b-bd99-8a78275ab010",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-search']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "iphone"
+    }, {
+      "id": "0ab8cf6c-8869-4d28-a698-e26c5301102e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-search-submit > .nav-input",
+      "targets": [
+        ["css=.nav-search-submit > .nav-input", "css:finder"],
+        ["xpath=//input[@value='Go']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-search']/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17fd2860-ed2f-4d31-9740-52cf59c43f02",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Best Sellers",
+      "targets": [
+        ["linkText=Best Sellers", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Sellers')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/bestsellers/?ref_=nav_cs_bestsellers')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Sellers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c1fdaec-b303-45b1-a8c3-e485087feec4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Best Sellers",
+      "targets": [
+        ["linkText=Best Sellers", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Sellers')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/bestsellers/?ref_=nav_cs_bestsellers')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Sellers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93f0d0f1-4bd3-4ac9-9e5e-3cb7c6556584",
+      "comment": "",
+      "command": "click",
+      "target": "id=zg_left_col1",
+      "targets": [
+        ["id=zg_left_col1", "id"],
+        ["css=#zg_left_col1", "css:finder"],
+        ["xpath=//div[@id='zg_left_col1']", "xpath:attributes"],
+        ["xpath=//div[@id='zg_left_col1wrap']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a27f11f-faa1-436b-9e5f-d33caddb3273",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Amazon.co.uk Best Sellers: The most popular items on Amazon",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85d32a42-702c-454e-87c5-c85b36582bc9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nav-link-prime",
+      "targets": [
+        ["id=nav-link-prime", "id"],
+        ["css=#nav-link-prime", "css:finder"],
+        ["xpath=//a[@id='nav-link-prime']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-tools']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/prime?ref_=nav_prime_try_btn')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74107356-cb44-4d7d-b0e2-6864bcf9c52b",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "253ae9b8-b88f-4d2e-b824-ca1c6c11d07a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Releases",
+      "targets": [
+        ["linkText=New Releases", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'New Releases')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a[5]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/new-releases/ref=zg_mg_tab/?ref_=nav_cs_newreleases')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'New Releases')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ee5b16c-8e06-4bf3-a4b6-affdce18d844",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-cart",
+      "targets": [
+        ["id=nav-cart", "id"],
+        ["css=#nav-cart", "css:finder"],
+        ["xpath=//a[@id='nav-cart']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-tools']/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.amazon.co.uk/gp/cart/view.html?ref_=nav_cart')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8c0c9027-3583-4d03-9018-9bc7b86d3e8a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["df946720-7c7d-4a69-b247-7d7c2672a6f3"]
+  }],
+  "urls": ["https://www.amazon.co.uk/"],
+  "plugins": []
+}
