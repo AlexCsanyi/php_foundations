@@ -11,8 +11,11 @@
 </head>
 <body>
     <?php 
-       $testObj = new Test();
-       $testObj->setUsersStmt('Eric', 'Drier', "1980-10-25");
+       $usersObj = new UsersView();
+       $usersObj->showUser('Peter');
+
+       $usersObj2 = new UsersController();
+       $usersObj2->createUser("Jennifer", "Anniston", "1968-10-19")
     ?>
 </body>
 </html>
